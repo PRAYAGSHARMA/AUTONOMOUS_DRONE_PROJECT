@@ -27,10 +27,7 @@ vehicle = connect(connection_string, wait_ready=True)
 
 
 def arm_and_takeoff(aTargetAltitude):
-    
-
-        
-    print "Arming motors"
+    print "Arming motors working"
     # Copter should arm in GUIDED mode
     vehicle.mode = VehicleMode("GUIDED")
     vehicle.armed = True
@@ -161,8 +158,6 @@ except KeyBoardInterrupt
 
        print("Setting LAND mode...")
        vehicle.mode = VehicleMode("LAND")
-
-
        #Close vehicle object before exiting script
        print "Close vehicle object"
        vehicle.close()
