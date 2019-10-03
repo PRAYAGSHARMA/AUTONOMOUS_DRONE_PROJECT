@@ -81,4 +81,4 @@ root.mainloop()
 
 
 vehicle.mode = VehicleMode("LAND")
-print("land")
+print("land now")
